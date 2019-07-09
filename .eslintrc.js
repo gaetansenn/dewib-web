@@ -57,7 +57,8 @@ module.exports = {
       2,
       {
         'anonymous': 'always',
-        'named': 'always'
+        'named': 'always',
+        'asyncArrow': 'always',
       }
     ],
     'space-before-blocks': [
@@ -74,7 +75,8 @@ module.exports = {
         'before': true,
         'after': true
       }
-    ]
+    ],
+    'semi': [2, 'never']
   },
   globals: {
     $nuxt: true
