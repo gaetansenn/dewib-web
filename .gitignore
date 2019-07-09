@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+
+# Build
+dist
+
+# Logs
+npm-debug.log
+
+# Coverage
+coverage
+coverage.lcov
+.nyc_output
+
+# Tempory files
+tmp
+.env
+.nuxt
+package-lock.json
+
+# Mac preferences
+**/.DS_Store
+
+# Cache
+.history
