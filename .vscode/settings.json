@@ -1,0 +1,41 @@
+{
+  "editor.formatOnType": false,
+  // Auto format on save for HTML/CSS/JS using Vetur
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+  "editor.formatOnSave": true,
+  "editor.autoClosingQuotes": "always",
+  "editor.detectIndentation": true,
+  "editor.autoIndent": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.vscode": true,
+    "**/.idea": true
+  },
+  // Eslint validate
+  "eslint.validate": [
+    "javascript",
+    "html",
+    "vue",
+    "vue-html"
+  ],
+  // Associate .vue files as vue type
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "files.autoSave": "off",
+  // Used for vscode-docthis
+  "docthis.includeMemberOfOnInterfaceMembers": false,
+  "docthis.includeMemberOfOnClassMembers": false,
+  "standard.enable": true,
+  // Overide config of prettyhtml as not applied from .prettierrc
+  "vetur.format.defaultFormatterOptions": {
+    "prettyhtml": {
+      "printWidth": 200
+    }
+  },
+}
