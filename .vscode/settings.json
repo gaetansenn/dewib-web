@@ -1,8 +1,5 @@
 {
   "editor.formatOnType": false,
-  // Auto format on save for HTML/CSS/JS using Vetur
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
   "editor.formatOnSave": true,
   "editor.autoClosingQuotes": "always",
   "editor.detectIndentation": true,
@@ -16,7 +13,7 @@
     "**/.vscode": true,
     "**/.idea": true
   },
-  // Eslint validate
+  // Eslint validate with autofix
   "eslint.validate": [
     "javascript",
     "html",
@@ -32,10 +29,12 @@
   "docthis.includeMemberOfOnInterfaceMembers": false,
   "docthis.includeMemberOfOnClassMembers": false,
   "standard.enable": true,
+  // Force formating from eslint config
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
   // Overide config of prettyhtml as not applied from .prettierrc
   "vetur.format.defaultFormatterOptions": {
     "prettyhtml": {
       "printWidth": 200
     }
-  },
+  }
 }
