@@ -1,49 +1,28 @@
 <template>
   <div class="home">
-    <div class="home-header">
-      <div class="home-header-content">
-        <h5 class="font-extrabold text-5xl text-center">Hello</h5>
-        <h1 class="text-center text-4xl sm:text-6xl">
-          <span class="font-thin align-middle">I Am</span>
-          <dw-animated-headline :values="values" class="inline-block align-middle"/>
-        </h1>
-      </div>
-    </div>
+    <home-header />
+    <home-about />
   </div>
 </template>
 
 <script>
-
-import DwAnimatedHeadline from '~/components/base/others/animated-headline'
+import HomeHeader from './components/home-header'
+import HomeAbout from './components/home-about'
 
 export default {
   name: 'Home',
   components: {
-    DwAnimatedHeadline
+    HomeHeader,
+    HomeAbout,
   },
   data () {
     return {
-      values: ['Gaetan Senn', 'Developer', 'Dewib'],
+      values: [this.$t('home.title.firstname'), this.$t('home.title.developer'), this.$t('home.title.company')],
     }
-  }
-};
+  },
+}
 </script>
 
 <style lang="scss">
-.home {
-  &-header {
-    @apply h-screen bg-cover flex flex-wrap content-center justify-center;
-    background-image: url('~assets/images/home.jpg');
-
-    &:after {
-      @apply absolute inset-0 bg-black z-10;
-      content: '';
-      opacity: 0.65;
-    }
-
-    &-content {
-      @apply text-white z-20 font-heading w-full;
-    }
-  }
-}
+@apply;
 </style>
