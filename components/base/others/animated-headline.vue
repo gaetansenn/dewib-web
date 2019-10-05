@@ -1,6 +1,6 @@
 <template>
-  <transition name="dw-animated-headline-animation" mode="out-in" @enter="enter" @after-enter="afterEnter" @leave="leave">
-    <div :key="`index-${currentIndex}`" class="dw-animated-headline-inner">{{ values[currentIndex] }}</div>
+  <transition name="dw-animated-headline-animation" mode="out-in" @enter="onEnter" @after-enter="onAfterEnter" @leave="onLeave">
+    <div :key="`index-${currentIndex}`" class="dw-animated-headline-inner" @mouseenter="stop" @mouseleave="start">{{ values[currentIndex] }}</div>
   </transition>
 </template>
 
@@ -24,13 +24,21 @@ export default {
   },
   mounted () {
     this.currentIndex = 0
-    setInterval(() => {
-      if (this.currentIndex === this.values.length - 1) this.currentIndex = 0
-      else this.currentIndex++
-    }, 2500)
+    this.start()
   },
   methods: {
-    enter (element) {
+    start () {
+      this.loop()
+      this._interval = setInterval(this.loop, 2500)
+    },
+    loop () {
+      if (this.currentIndex === this.values.length - 1) this.currentIndex = 0
+      else this.currentIndex++
+    },
+    stop () {
+      clearInterval(this._interval)
+    },
+    onEnter (element) {
       element.style.position = 'absolute'
       element.style.visibility = 'hidden'
       element.style.width = 'auto'
@@ -49,10 +57,10 @@ export default {
         element.style.width = width
       })
     },
-    afterEnter (element) {
+    onAfterEnter (element) {
       element.style.width = 'auto'
     },
-    leave (element) {
+    onLeave (element) {
       const width = getComputedStyle(element).width
 
       element.style.width = width
