@@ -13,8 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@nuxtjs/router": "^1.3.2",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.4.0",
+    "nuxt-i18n": "^6.3.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",

@@ -11,7 +11,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:400&display=swap' },
     ]
   },
   /*
@@ -40,11 +41,36 @@ module.exports = {
     '@nuxtjs/tailwindcss'
   ],
   modules: [
-    '@nuxtjs/router'
+    '@nuxtjs/router',
+    'nuxt-i18n',
+    ['nuxt-fontawesome', {
+      component: 'fa-icon',
+      imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['faBars']
+        }
+      ]
+    }],
   ],
   tailwindcss: {
     configPath: '~/config/tailwind.js',
     cssPath: '~/assets/main.css'
+  },
+  i18n: {
+    defaultLocale: 'en',
+    locales: [{
+      code: 'fr',
+      file: 'fr.js'
+    }, {
+      code: 'en',
+      file: 'en.js'
+    }],
+    langDir: 'static/i18n/',
+    lazy: true,
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
   }
 }
 
