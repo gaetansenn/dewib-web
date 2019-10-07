@@ -28,7 +28,7 @@ module.exports = {
     'vue/html-closing-bracket-spacing': 0,
     // https://github.com/vuejs/eslint-plugin-vue/blob/master/docs/rules/no-v-html.md
     'vue/no-v-html': 0,
-    'vue/order-in-components': ['warning', {
+    'vue/order-in-components': [1, {
       'order': [
         'el',
         'name',
