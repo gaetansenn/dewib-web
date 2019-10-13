@@ -1,40 +1,23 @@
 {
-  "editor.formatOnType": false,
-  "editor.formatOnSave": true,
-  "editor.autoClosingQuotes": "always",
-  "editor.detectIndentation": true,
-  "editor.autoIndent": false,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/.vscode": true,
-    "**/.idea": true
-  },
-  // Eslint validate with autofix
   "eslint.validate": [
-    "javascript",
-    "html",
-    "vue",
-    "vue-html"
-  ],
-  // Associate .vue files as vue type
-  "files.associations": {
-    "*.vue": "vue"
-  },
-  "files.autoSave": "off",
-  // Used for vscode-docthis
-  "docthis.includeMemberOfOnInterfaceMembers": false,
-  "docthis.includeMemberOfOnClassMembers": false,
-  "standard.enable": true,
-  // Force formating from eslint config
-  "vetur.format.defaultFormatter.js": "prettier-eslint",
-  // Overide config of prettyhtml as not applied from .prettierrc
-  "vetur.format.defaultFormatterOptions": {
-    "prettyhtml": {
-      "printWidth": 200
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue-html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
     }
-  }
+  ],
+  "eslint.autoFixOnSave": true,
+  // Force using formating from eslint config
+  "vetur.format.defaultFormatter.js": "none"
 }
