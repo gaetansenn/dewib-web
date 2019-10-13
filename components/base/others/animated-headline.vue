@@ -1,6 +1,8 @@
 <template>
   <transition name="dw-animated-headline-animation" mode="out-in" @enter="onEnter" @after-enter="onAfterEnter" @leave="onLeave">
-    <div :key="`index-${currentIndex}`" class="dw-animated-headline-inner" @mouseenter="stop" @mouseleave="start">{{ values[currentIndex] }}</div>
+    <div :key="`index-${currentIndex}`" class="dw-animated-headline-inner" @mouseenter="stop" @mouseleave="start">
+      {{ values[currentIndex] }}
+    </div>
   </transition>
 </template>
 
@@ -13,13 +15,13 @@ export default {
      */
     values: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
   data () {
     return {
       width: 0,
-      currentIndex: -1,
+      currentIndex: -1
     }
   },
   mounted () {
@@ -71,8 +73,8 @@ export default {
       setTimeout(() => {
         element.style.width = 0
       })
-    },
-  },
+    }
+  }
 }
 </script>
 

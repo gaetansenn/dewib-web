@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   /*
   ** Headers of the page
   */
@@ -11,8 +11,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:400&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:200,400,800,900&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap' }
     ]
   },
   /*
@@ -26,32 +26,34 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend: function (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend (config, { isDev, isClient }) {
+      if (isDev && isClient)
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
-      }
     }
   },
+  plugins: [
+    { src: '~/plugins/carousel.js', mode: 'client' }
+  ],
   devModules: [
     '@nuxtjs/tailwindcss'
   ],
   modules: [
     '@nuxtjs/router',
     'nuxt-i18n',
+    'vue-scrollto/nuxt',
     ['nuxt-fontawesome', {
-      component: 'fa-icon',
       imports: [
         {
           set: '@fortawesome/free-solid-svg-icons',
-          icons: ['faBars']
+          icons: ['faBars', 'faCode', 'faCircle']
         }
       ]
-    }],
+    }]
   ],
   tailwindcss: {
     configPath: '~/config/tailwind.js',
@@ -73,4 +75,3 @@ module.exports = {
     }
   }
 }
-

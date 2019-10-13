@@ -1,14 +1,16 @@
 <template>
-  <div class="home-about">
+  <section id="about" name="about" class="home-about">
     <div class="home-about-container app-container">
       <div class="w-2/5">
         <div class="home-about-hero">
-          <img src="~assets/images/me.jpeg" class="home-about-hero-img" />
+          <img src="~assets/images/me.jpeg" class="home-about-hero-img">
         </div>
       </div>
       <div class="w-3/5">
         <div class="home-about-description">
-          <h3 class="font-heading font-extrabold text-3xl">{{ $t('home.about.title') }}</h3>
+          <h3 class="font-heading font-extrabold text-3xl">
+            {{ $t('home.about.title') }}
+          </h3>
           <span class="font-body font-normal text-gray-600 uppercase">{{ $t('home.about.skills') }}</span>
           <p class="font-body font-normal text-gray-700 mt-8">
             {{ $t('home.about.description-1') }}
@@ -18,12 +20,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 .home-about {
-  @apply mt-12 bg-gray-100;
+  @apply mt-12 mb-24;
 
   &-container {
     @apply flex;
@@ -48,7 +50,7 @@
   }
 
   &-description {
-    @apply flex flex-col px-8;
+    @apply flex flex-col px-8 items-start;
   }
 }
 </style>

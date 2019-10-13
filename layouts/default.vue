@@ -10,7 +10,7 @@ import headerApp from '~/components/commons/header'
 
 export default {
   components: {
-    headerApp,
-  },
+    headerApp
+  }
 }
 </script>
