@@ -29,7 +29,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'grey-basic': '#f7f7f7'
+        'grey-basic': '#f7f7f7',
+        'grey-2': '#f4f4f4',
+        'grey-3': '#ffffff'
       }
     }
   },

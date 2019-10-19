@@ -5,6 +5,7 @@
     <home-services />
     <home-works />
     <home-clients />
+    <home-contact />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HomeAbout from './components/home-about'
 import HomeServices from './components/home-services'
 import HomeWorks from './components/home-works'
 import HomeClients from './components/home-clients'
+import HomeContact from './components/home-contact'
 
 export default {
   name: 'Home',
@@ -22,7 +24,8 @@ export default {
     HomeAbout,
     HomeServices,
     HomeWorks,
-    HomeClients
+    HomeClients,
+    HomeContact
   },
   data () {
     return {

@@ -46,6 +46,21 @@ export default {
         author: 'Celine - Useradgents',
         role: 'Chef project'
       }
+    },
+    contact: {
+      title: 'Contact.',
+      address: {
+        title: 'Address',
+        description: '13 rue Saint-joseph, 33000 Bordeaux'
+      },
+      email: {
+        title: 'Email',
+        description: 'contact@dewib.com'
+      },
+      phone: {
+        title: 'Phone',
+        description: '+33 6 28 90 78 86'
+      }
     }
   }
 }
