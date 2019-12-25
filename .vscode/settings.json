@@ -19,5 +19,8 @@
   ],
   "eslint.autoFixOnSave": true,
   // Force using formating from eslint config
-  "vetur.format.defaultFormatter.js": "none"
+  "vetur.format.defaultFormatter.js": "none",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

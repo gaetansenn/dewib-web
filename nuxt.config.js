@@ -50,7 +50,11 @@ export default {
       imports: [
         {
           set: '@fortawesome/free-solid-svg-icons',
-          icons: ['faBars', 'faCode', 'faCircle', 'faLocationArrow', 'faEnvelope', 'faPhone']
+          icons: ['faBars', 'faCode', 'faCircle', 'faLocationArrow', 'faEnvelope', 'faPhone', 'faLayerGroup', 'faChalkboardTeacher', 'faTasks']
+        },
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['faTwitter', 'faGithub', 'faLinkedinIn']
         }
       ]
     }]

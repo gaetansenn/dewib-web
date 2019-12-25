@@ -5,3 +5,15 @@
 html {
   color: #343434;
 }
+
+.mobile-container-x {
+  @apply px-6;
+
+  @screen md {
+    @apply px-8;
+  }
+
+  @screen lg {
+        padding: initial;
+    }
+}

@@ -31,7 +31,11 @@ module.exports = {
       colors: {
         'grey-basic': '#f7f7f7',
         'grey-2': '#f4f4f4',
-        'grey-3': '#ffffff'
+        'grey-3': '#ffffff',
+        'grey-4': '#757575',
+        'grey-5': '#748182',
+        'grey-6': '#888',
+        'black-1': '#1c1c1c'
       }
     }
   },

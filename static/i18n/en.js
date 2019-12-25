@@ -26,9 +26,17 @@ export default {
     },
     services: {
       title: 'Services.',
-      development: {
-        title: 'Development',
-        description: 'Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry\'s standard dummy text ever'
+      architecture: {
+        title: 'Architecture',
+        description: 'The choice of technologies as well as the architecture used during the first phase of a project is very important. This is why at Dewib we analyze your needs and develop customs components to optimize and simplify site integration.'
+      },
+      courses: {
+        title: 'Courses',
+        description: 'Dewib offers tailor-made VueJS, NuxtJS and CSS training of all levels to get you started or help you develop your website'
+      },
+      consulting: {
+        title: 'Consulting',
+        description: 'The opinion of an expert is very important if you want to solve a problem or develop a new feature within your project. Please do not hesitate to contact us for more information.'
       }
     },
     works: {
@@ -48,7 +56,7 @@ export default {
       }
     },
     contact: {
-      title: 'Contact.',
+      title: 'Contact me, follow me.',
       address: {
         title: 'Address',
         description: '13 rue Saint-joseph, 33000 Bordeaux'
@@ -59,7 +67,28 @@ export default {
       },
       phone: {
         title: 'Phone',
-        description: '+33 6 28 90 78 86'
+        description: '06 28 90 78 86'
+      },
+      linkedin: {
+        title: 'Linkedin',
+        description: 'See my profile'
+      },
+      twitter: {
+        title: 'Twitter',
+        description: 'See my profile'
+      },
+      opensource: {
+        title: 'Open source',
+        description: 'Web libraries and Frameworks come largely from open source. Having the opportunity to work with tools like',
+        'description-2': 'and',
+        'description-3': 'is a nice opportunity to help these communities and gain more experience for future clients.',
+        link: 'See my contributions'
+      },
+      form: {
+        name: 'Name',
+        email: 'Email',
+        message: 'Message',
+        submit: 'Submit'
       }
     }
   }

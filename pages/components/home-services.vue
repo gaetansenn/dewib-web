@@ -37,17 +37,17 @@ export default {
   data () {
     return {
       services: [{
-        title: 'home.services.development.title',
-        description: 'home.services.development.description',
-        icon: 'code'
+        title: 'home.services.architecture.title',
+        description: 'home.services.architecture.description',
+        icon: 'layer-group'
       }, {
-        title: 'home.services.development.title',
-        description: 'home.services.development.description',
-        icon: 'code'
+        title: 'home.services.courses.title',
+        description: 'home.services.courses.description',
+        icon: 'chalkboard-teacher'
       }, {
-        title: 'home.services.development.title',
-        description: 'home.services.development.description',
-        icon: 'code'
+        title: 'home.services.consulting.title',
+        description: 'home.services.consulting.description',
+        icon: 'tasks'
       }]
     }
   }
@@ -59,7 +59,7 @@ export default {
   @apply flex flex-row bg-grey-basic pb-24;
 
   &-service {
-    @apply flex flex-col items-center justify-center bg-white px-8 py-12 rounded-lg shadow-lg;
+    @apply flex flex-col items-center justify-start bg-white px-8 py-12 rounded-lg shadow-lg h-full;
 
     &-icon {
       transition: all 0.3s ease;
