@@ -12,11 +12,18 @@
             {{ $t('home.about.title') }}
           </h3>
           <span class="font-body font-normal text-gray-600 uppercase">{{ $t('home.about.skills') }}</span>
-          <p class="font-body font-normal text-gray-700 mt-8">
+          <div class="font-body font-normal text-gray-700 mt-8">
             {{ $t('home.about.description-1') }}
-            <b>{{ $t('home.about.description-2') }}</b>
-            {{ $t('home.about.description-3') }}
-          </p>
+            <div class="py-5">
+              {{ $t('home.about.description-2') }}
+            </div>
+            {{ $t('home.about.description-3.main') }}
+            <ul class="ml-5">
+              <li>- {{ $t('home.about.description-3.service-1') }}</li>
+              <li>- {{ $t('home.about.description-3.service-2') }}</li>
+              <li>- {{ $t('home.about.description-3.service-3') }}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

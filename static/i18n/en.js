@@ -14,15 +14,20 @@ export default {
       main: 'Hello',
       sub: 'I am',
       firstname: 'Gaetan SENN',
-      developer: 'Developer',
+      developer: 'A freelancer developer',
       company: 'Dewib'
     },
     about: {
       title: 'About me',
       skills: 'Freelance JavaScript Developer • Vue.js / Nuxt.js • Node.js',
-      'description-1': 'I am',
-      'description-2': 'Gaetan SENN',
-      'description-3': 'Ut eu blandit lectus. Nunc vestibulum elit non ligula tincidunt dictum. Quisque nec dignissim enim. Nulla facilisi. Nullam aliquam lacus quis tellus dapibus maximus. In in turpis sit amet enim vehicula aliquam. Nulla sollicitudin non enim quis faucibus. In hac habitasse platea dictumst. Duis luctus metus et nibh rutrum, et maximus magna porta. Nulla suscipit urna vitae felis hendrerit, sed euismod lacus malesuada. Mauris nec tortor at nibh mattis dignissim at non sapien. In volutpat, felis ac hendrerit commodo, justo risus aliquet eros, finibus tristique est nulla elementum ligula.'
+      'description-1': `I'm Gaetan Senn, full stack javascript developer specializing in the development of tailor-made sites (e-commerce, marketplace, showcase site).`,
+      'description-2': 'Besides having developed websites like Franprix, Macdonald and BilletReduc I also have a great passion for open source by helping communities like NuxtJS in the development of modules.',
+      'description-3': {
+        main: 'I propose to support companies until the launch of the project in 3 stages:',
+        'service-1': 'The development of the initial architecture of the project',
+        'service-2': 'Developer training within the project',
+        'service-3': 'The development of very specific functionalities as well as consulting to answer your questions.'
+      }
     },
     services: {
       title: 'Services.',

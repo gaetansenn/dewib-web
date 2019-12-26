@@ -8,11 +8,11 @@
       </div>
       <div class="flex flex-wrap mb-20 -mx-3">
         <div v-for="(work, index) in works" :key="index" class="home-works-container">
-          <div class="home-works-work" :style="`background-image: url('${ work.image }'); padding-top: 75%;`">
+          <a :href="work.link" target="_blank" class="home-works-work" :style="`background-image: url('${ work.image }'); padding-top: 75%;`">
             <div class="home-works-work-title">
               {{ work.title }}
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -62,7 +62,11 @@ export default {
   }
 
   &-work {
-    @apply relative shadow-lg bg-no-repeat bg-contain;
+    @apply relative shadow-xl bg-no-repeat bg-contain cursor-pointer block;
+
+    &:hover {
+      @apply shadow-2xl;
+    }
 
     @screen sm {
       @apply rounded-lg;
