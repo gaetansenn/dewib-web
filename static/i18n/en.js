@@ -20,7 +20,7 @@ export default {
     about: {
       title: 'About me',
       skills: 'Freelance JavaScript Developer • Vue.js / Nuxt.js • Node.js',
-      'description-1': `I'm Gaetan Senn, full stack javascript developer specializing in the development of tailor-made sites (e-commerce, marketplace, showcase site).`,
+      'description-1': 'I\'m Gaetan Senn, full stack javascript developer specializing in the development of tailor-made sites (e-commerce, marketplace, showcase site).',
       'description-2': 'Besides having developed websites like Franprix, Macdonald and BilletReduc I also have a great passion for open source by helping communities like NuxtJS in the development of modules.',
       'description-3': {
         main: 'I propose to support companies until the launch of the project in 3 stages:',

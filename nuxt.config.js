@@ -77,6 +77,15 @@ export default {
     configPath: '~/config/tailwind.js',
     cssPath: '~/assets/main.css'
   },
+  purgeCSS: {
+    whitelist: [
+      'dw-animated-headline-animation-enter-active',
+      'dw-animated-headline-animation-leave-active',
+      'dw-animated-headline-animation-enter',
+      'dw-animated-headline-animation-leave-to'
+    ],
+    whitelistPatterns: [/(^|\.)fa-/, /-fa($|\.)/]
+  },
   i18n: {
     defaultLocale: 'en',
     locales: [{

@@ -41,9 +41,12 @@ export default {
       clearInterval(this._interval)
     },
     onEnter (element) {
+      console.log('on enter')
       element.style.position = 'absolute'
       element.style.visibility = 'hidden'
       element.style.width = 'auto'
+
+      console.log('with is', getComputedStyle(element).width)
 
       const width = getComputedStyle(element).width
 
@@ -60,9 +63,11 @@ export default {
       })
     },
     onAfterEnter (element) {
+      console.log('after enter')
       element.style.width = 'auto'
     },
     onLeave (element) {
+      console.log('on leave')
       const width = getComputedStyle(element).width
 
       element.style.width = width

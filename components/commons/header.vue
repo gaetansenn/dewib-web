@@ -91,7 +91,9 @@ export default {
     @apply fixed top-0 left-0 w-full bg-white py-5;
 
     .header-right {
-      @apply text-black;
+      &-menu {
+        @apply text-black;
+      }
 
       a:after {
         @apply bg-black;
