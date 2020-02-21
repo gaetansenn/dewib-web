@@ -14,7 +14,7 @@ export default {
       main: 'Hello',
       sub: 'I am',
       firstname: 'Gaetan SENN',
-      developer: 'A freelancer developer',
+      developer: 'A developer',
       company: 'Dewib'
     },
     about: {

@@ -4,8 +4,8 @@
       <h5 class="font-extrabold text-5xl text-center">
         {{ $t('home.title.main') }}
       </h5>
-      <h1 class="text-center text-4xl sm:text-6xl">
-        <span class="font-thin align-middle">{{ $t('home.title.sub') }}</span>
+      <h1 class="text-center text-4xl sm:text-6xl px-5">
+        <span class="block sm:inline font-thin align-middle">{{ $t('home.title.sub') }}</span>
         <dw-animated-headline :values="values" class="inline-block align-middle" />
       </h1>
     </div>

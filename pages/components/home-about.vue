@@ -1,12 +1,12 @@
 <template>
   <section id="about" name="about" class="home-about">
     <div class="home-about-container app-container">
-      <div class="w-2/5">
+      <div class="w-full md:w-2/5">
         <div class="home-about-hero">
           <img src="~assets/images/me.jpeg" class="home-about-hero-img">
         </div>
       </div>
-      <div class="w-3/5">
+      <div class="w-full mt-16 md:mt-0 md:w-3/5">
         <div class="home-about-description">
           <h3 class="font-heading font-extrabold text-3xl">
             {{ $t('home.about.title') }}
@@ -32,17 +32,29 @@
 
 <style lang="scss" scoped>
 .home-about {
-  @apply mt-12 mb-24;
+  @apply mt-8 mb-24;
+
+  @screen md {
+    @apply mt-12;
+  }
 
   &-container {
-    @apply flex;
+    @apply flex flex-wrap;
   }
 
   &-hero {
-    @apply pl-10 relative;
+    @apply pl-3 relative;
+
+    @screen md {
+      @apply pl-10;
+    }
 
     &-img {
-      @apply relative z-10;
+      @apply relative z-10 mx-auto;
+
+      @screen md {
+        @apply mx-0;
+      }
     }
 
     &:after {
@@ -57,7 +69,7 @@
   }
 
   &-description {
-    @apply flex flex-col px-8 items-start;
+    @apply flex flex-col px-12 items-start;
   }
 }
 </style>

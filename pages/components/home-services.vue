@@ -2,13 +2,13 @@
   <section id="services" name="services" class="home-services">
     <div class="app-container">
       <div class="inline-flex justify-center w-full">
-        <heading attribute="h3" class="my-20 text-4xl font-heading font-black">
+        <heading attribute="h3" class="my-12 md:my-20 text-4xl font-heading font-black">
           {{ $t('home.services.title') }}
         </heading>
       </div>
       <div class="px-2">
-        <div class="flex -mx-4">
-          <div v-for="(service, index) in services" :key="index" class="w-1/3 px-4" @hover="service.hover = true">
+        <div class="flex flex-wrap md:-mx-4">
+          <div v-for="(service, index) in services" :key="index" class="w-full md:w-1/3 py-2 md:py-0 px-4" @hover="service.hover = true">
             <div class="home-services-service">
               <div class="home-services-service-icon">
                 <font-awesome-icon :icon="['fas', service.icon]" class="text-black m-2 text-xl" />
@@ -56,7 +56,11 @@ export default {
 
 <style lang="scss">
 .home-services {
-  @apply flex flex-row bg-grey-basic pb-24;
+  @apply flex flex-row bg-grey-basic pb-12;
+
+  @screen md {
+    @apply pb-24;
+  }
 
   &-service {
     @apply flex flex-col items-center justify-start bg-white px-8 py-12 rounded-lg shadow-lg h-full;

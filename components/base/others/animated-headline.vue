@@ -81,14 +81,18 @@ export default {
 <style lang="scss">
 .dw-animated-headline {
   &-inner {
-    @apply whitespace-no-wrap relative pr-2 overflow-hidden;
+    @apply relative pr-2 overflow-hidden whitespace-no-wrap;
 
     &:after {
-      @apply absolute right-0 bg-gray-200;
+      @apply hidden absolute right-0 bg-gray-200;
       width: 2px;
       height: 70%;
       top: 10%;
       content: '';
+
+      @screen md {
+        @apply block;
+      }
     }
   }
 

@@ -2,13 +2,16 @@
   <nav name="header" :class="{ 'sticky': sticky }" class="header">
     <div class="header-container app-container">
       <img src="~static/logo.svg" width="100">
-      <ul class="header-right">
-        <li v-for="item in items" :key="item.id">
-          <nuxt-link v-scroll-to="`#${item.id}`" :to="{ hash: `#${item.id}` }" :class="{ 'active': active === item.id }" @click.prevent>
-            {{ item.label }}
-          </nuxt-link>
-        </li>
-      </ul>
+      <div class="header-right">
+        <font-awesome-icon class="header-right-icon" :icon="['fas', 'bars']" />
+        <ul class="header-right-menu">
+          <li v-for="item in items" :key="item.id">
+            <nuxt-link v-scroll-to="`#${item.id}`" :to="{ hash: `#${item.id}` }" :class="{ 'active': active === item.id }" @click.prevent>
+              {{ item.label }}
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>
@@ -97,28 +100,46 @@ export default {
   }
 
   &-container {
-    @apply flex justify-between;
+    @apply flex justify-between px-10;
+
+    @screen lg {
+      @apply px-0;
+    }
   }
 
   &-right {
-    @apply inline-flex text-white;
+    &-icon {
+      @apply text-white text-2xl;
 
-    li {
-      @apply px-5;
+      @screen md {
+        @apply hidden;
+      }
+    }
 
-      a {
-        @apply relative;
+    &-menu {
+      @apply text-white hidden;
 
-        &:after {
-          @apply absolute w-0 left-0 bg-white;
-          content: '';
-          transition: all .5s;
-          height: 2px;
-          bottom: -3px;
-        }
+      @screen md {
+        @apply inline-flex;
+      }
 
-        &.active:after {
-          @apply w-full;
+      li {
+        @apply px-5;
+
+        a {
+          @apply relative;
+
+          &:after {
+            @apply absolute w-0 left-0 bg-white;
+            content: '';
+            transition: all .5s;
+            height: 2px;
+            bottom: -3px;
+          }
+
+          &.active:after {
+            @apply w-full;
+          }
         }
       }
     }

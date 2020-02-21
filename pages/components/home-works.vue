@@ -2,7 +2,7 @@
   <section id="works" name="works" class="home-works">
     <div class="app-container">
       <div class="inline-flex justify-center w-full">
-        <heading attribute="h3" class="my-20 text-4xl font-heading font-black">
+        <heading attribute="h3" class="my-12 md:my-20 text-4xl font-heading font-black">
           {{ $t('home.works.title') }}
         </heading>
       </div>
@@ -29,7 +29,7 @@ export default {
   data () {
     return {
       works: [{
-        title: 'Site e-commerce Franprix',
+        title: 'E-commerce website Franprix',
         image: require('~/assets/images/works/franprix.jpg'),
         link: 'https://www.franprix.fr/'
       }, {
@@ -38,7 +38,7 @@ export default {
         link: 'https://www.pandacola.com/'
       },
       {
-        title: 'Developing xhr-cache module',
+        title: 'Open source project',
         image: require('~/assets/images/works/xhr-cache.png'),
         link: 'https://github.com/gaetansenn/xhr-cache'
       }]
@@ -50,14 +50,10 @@ export default {
 <style lang="scss">
 .home-works {
   &-container {
-    @apply w-full px-3 mb-5;
-
-    @screen sm {
-      @apply w-1/2;
-    }
+    @apply w-full px-12 mb-5;
 
     @screen md {
-      @apply w-1/3;
+      @apply w-1/3 px-3;
     }
   }
 

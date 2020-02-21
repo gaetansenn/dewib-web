@@ -39,7 +39,7 @@ export default {
   plugins: [
     { src: '~/plugins/carousel.js', mode: 'client' }
   ],
-  devModules: [
+  buildModules: [
     '@nuxtjs/tailwindcss'
   ],
   modules: [
