@@ -75,8 +75,7 @@ export default {
   ],
   tailwindcss: {
     configPath: '~/config/tailwind.js',
-    cssPath: '~/assets/main.css',
-    purgeCSSInDev: true
+    cssPath: '~/assets/main.css'
   },
   purgeCSS: {
     whitelist: [
