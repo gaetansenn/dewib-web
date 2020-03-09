@@ -21,7 +21,7 @@ export default {
       title: 'About me',
       skills: 'Freelance JavaScript Developer • Vue.js / Nuxt.js • Node.js',
       'description-1': 'I\'m Gaetan Senn, full stack javascript developer specializing in the development of tailor-made sites (e-commerce, marketplace, showcase site).',
-      'description-2': 'Besides having developed websites like Franprix, Macdonald and BilletReduc I also have a great passion for open source by helping communities like NuxtJS in the development of modules.',
+      'description-2': 'Besides having developed websites like Franprix, Pandacola and Artcurial I also have a great passion for open source by helping communities like NuxtJS in the development of modules.',
       'description-3': {
         main: 'I propose to support companies until the launch of the project in 3 stages:',
         'service-1': 'The development of the initial architecture of the project',
@@ -50,12 +50,12 @@ export default {
     clients: {
       title: 'Testimonials.',
       ciruseo: {
-        description: 'Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry\'s standard dummy text ever Lorem Ipsum is simply dummy text of the Lorem Ipsum Lorem Ipsum is simply dummy text of the Lorem Ipsum',
+        description: 'Very good collaboration with Gaëtan who knew how to bring his VueJS / NuxtJS expertise within the project but also ideas on the UI / UX design part.',
         author: 'Helene de brix - Ciruseo / Accenture',
         role: 'Head of Application Development'
       },
       useradgents: {
-        description: 'Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry\'s standard dummy text ever Lorem Ipsum is simply dummy text of the Lorem Ipsum Lorem Ipsum is simply dummy text of the Lorem Ipsum',
+        description: 'Very good collaboration with Gaëtan who led the project franprix.fr from architecture to production, always with a concern to do well both technically and in terms of customer experience, and providing high quality work. He is comfortable on all types of subjects and has demonstrated strong VueJS, Nuxt, nodeJS and integration expertise. His integration into the team went very well, he takes care of the lead on less experienced developers to advance them. In short, we would be happy to call on him!',
         author: 'Celine - Useradgents',
         role: 'Chef project'
       }
@@ -96,5 +96,9 @@ export default {
         submit: 'Submit'
       }
     }
+  },
+  locales: {
+    en: 'English',
+    fr: 'Francais'
   }
 }

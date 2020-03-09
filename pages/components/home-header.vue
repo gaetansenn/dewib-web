@@ -38,11 +38,15 @@ export default {
   &:after {
     @apply absolute inset-0 bg-black z-10;
     content: '';
-    opacity: 0.65;
+    opacity: 0.55;
   }
 
   &-content {
-    @apply text-white z-20 font-heading w-full;
+    @apply text-white z-20 font-heading w-full pt-12;
+
+    @screen md {
+      @apply pt-0;
+    }
   }
 
   &-bottom {

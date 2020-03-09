@@ -64,7 +64,7 @@ export default {
       imports: [
         {
           set: '@fortawesome/free-solid-svg-icons',
-          icons: ['faBars', 'faCode', 'faCircle', 'faLocationArrow', 'faEnvelope', 'faPhone', 'faLayerGroup', 'faChalkboardTeacher', 'faTasks']
+          icons: ['faBars', 'faCode', 'faCircle', 'faLocationArrow', 'faEnvelope', 'faPhone', 'faLayerGroup', 'faChalkboardTeacher', 'faTasks', 'faCaretDown']
         },
         {
           set: '@fortawesome/free-brands-svg-icons',
@@ -75,7 +75,8 @@ export default {
   ],
   tailwindcss: {
     configPath: '~/config/tailwind.js',
-    cssPath: '~/assets/main.css'
+    cssPath: '~/assets/main.css',
+    purgeCSSInDev: true
   },
   purgeCSS: {
     whitelist: [
@@ -90,7 +91,8 @@ export default {
     defaultLocale: 'en',
     locales: [{
       code: 'fr',
-      file: 'fr.js'
+      file: 'fr.js',
+      name: 'Français'
     }, {
       code: 'en',
       file: 'en.js'

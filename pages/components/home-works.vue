@@ -6,7 +6,7 @@
           {{ $t('home.works.title') }}
         </heading>
       </div>
-      <div class="flex flex-wrap mb-20 -mx-3">
+      <div class="flex flex-wrap mb-20 sm:-mx-3">
         <div v-for="(work, index) in works" :key="index" class="home-works-container">
           <a :href="work.link" target="_blank" class="home-works-work" :style="`background-image: url('${ work.image }'); padding-top: 75%;`">
             <div class="home-works-work-title">
