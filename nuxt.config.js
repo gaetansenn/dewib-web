@@ -23,18 +23,6 @@ export default {
   ** Build configuration
   */
   build: {
-    /*
-    ** Run ESLint on save
-    */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient)
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-    },
     babel: {
       presets ({ isServer }) {
         return [
@@ -57,6 +45,7 @@ export default {
     '@nuxtjs/tailwindcss'
   ],
   modules: [
+    '@nuxtjs/pwa',
     '@nuxtjs/router',
     'nuxt-i18n',
     'vue-scrollto/nuxt',

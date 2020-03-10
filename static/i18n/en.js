@@ -56,7 +56,7 @@ export default {
       },
       useradgents: {
         description: 'Very good collaboration with Gaëtan who led the project franprix.fr from architecture to production, always with a concern to do well both technically and in terms of customer experience, and providing high quality work. He is comfortable on all types of subjects and has demonstrated strong VueJS, Nuxt, nodeJS and integration expertise. His integration into the team went very well, he takes care of the lead on less experienced developers to advance them. In short, we would be happy to call on him!',
-        author: 'Celine - Useradgents',
+        author: 'Célia - Useradgents',
         role: 'Chef project'
       }
     },
