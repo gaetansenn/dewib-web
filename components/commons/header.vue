@@ -1,7 +1,7 @@
 <template>
   <nav name="header" :class="{ 'sticky': sticky }" class="header">
     <div class="header-container app-container">
-      <img :src="sticky ? require('~/static/logo-black.svg') : require('~/static/logo.svg')" width="100">
+      <img :src="sticky ? require('~/static/logo-black.svg') : require('~/static/logo.svg')" width="100" style="height: 54px">
       <div :class="{ 'sticky': sticky && !opened }" class="header-right">
         <font-awesome-icon class="header-right-icon" :icon="['fas', 'bars']" @click="opened = !opened" />
         <div :class="{ 'opened': opened }" class="header-right-wrapper">
@@ -118,7 +118,7 @@ export default {
   }
 
   &-container {
-    @apply flex justify-between px-5;
+    @apply flex justify-between px-5 items-center;
 
     @screen md {
       @apply px-0;

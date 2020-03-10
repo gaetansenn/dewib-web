@@ -42,7 +42,7 @@ export default {
   }
 
   &-content {
-    @apply text-white z-20 font-heading w-full pt-12;
+    @apply text-white z-20 font-heading w-full pt-12 self-center;
 
     @screen md {
       @apply pt-0;
