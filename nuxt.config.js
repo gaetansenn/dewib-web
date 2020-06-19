@@ -90,5 +90,17 @@ export default {
     vueI18n: {
       fallbackLocale: 'en'
     }
+  },
+  pwa: {
+    name: 'Dewib',
+    meta: {
+      title: 'Dewib',
+      author: 'Dewib'
+    },
+    manifest: {
+      name: 'Dewib webste',
+      short_name: 'Dewib',
+      lang: 'fr'
+    }
   }
 }
