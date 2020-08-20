@@ -9,7 +9,7 @@
       </div> -->
       <carousel :per-page="1" pagination-color="#D6D6D6" pagination-active-color="#869791">
         <slide v-for="(item, index) in items" :key="index" class="flex flex-col text-center items-center justify-center w-full">
-          <img :src="item.image" class="rounded-full bg-cover" width="90">
+          <img :src="item.image" class="rounded-full bg-cover w-32">
           <p class="px-5 md:px-0 text-grey-5 font-body font-normal text-base mt-5 leading-relaxed">
             {{ $t(item.description) }}
           </p>

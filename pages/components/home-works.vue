@@ -10,7 +10,7 @@
         <div v-for="(work, index) in works" :key="index" class="home-works-container">
           <a :href="work.link" target="_blank" class="home-works-work" :style="`background-image: url('${ work.image }'); padding-top: 75%;`">
             <div class="home-works-work-title">
-              {{ work.title }}
+              {{ $t(work.title) }}
             </div>
           </a>
         </div>
@@ -29,18 +29,23 @@ export default {
   data () {
     return {
       works: [{
-        title: 'E-commerce website Franprix',
+        title: 'home.works.contents.franprix',
         image: require('~/assets/images/works/franprix.jpg'),
         link: 'https://www.franprix.fr/'
       }, {
-        title: 'Marketplace pandacola',
+        title: 'home.works.contents.pandacola',
         image: require('~/assets/images/works/pandacola.png'),
         link: 'https://www.pandacola.com/'
       },
       {
-        title: 'Open source project',
+        title: 'home.works.contents.xhr-cache',
         image: require('~/assets/images/works/xhr-cache.png'),
         link: 'https://github.com/gaetansenn/xhr-cache'
+      },
+      {
+        title: 'home.works.contents.mypopotte',
+        image: require('~/assets/images/works/mypopotte.png'),
+        link: 'https://mypopotte.com'
       }]
     }
   }
@@ -69,15 +74,15 @@ export default {
     }
 
     &-title {
-      @apply flex items-center justify-center absolute inset-x-0 z-10 text-white bottom-0;
-      height: 50px;
+      @apply flex items-center justify-center absolute inset-x-0 z-10 text-white bottom-0 px-3;
+      height: 55px;
     }
 
     &:after {
       @apply absolute bottom-0 bg-black opacity-75 w-full inset-x-0;
       content: '';
       z-index: 0;
-      height: 50px;
+      height: 55px;
 
       @screen sm {
         @apply rounded-b-lg;

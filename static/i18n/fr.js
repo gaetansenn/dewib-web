@@ -45,7 +45,13 @@ export default {
       }
     },
     works: {
-      title: 'Projets.'
+      title: 'Projets.',
+      contents: {
+        franprix: 'Site e-commerce franprix',
+        pandacola: 'Marketplace pandacola',
+        'xhr-cache': 'Project open source',
+        mypopotte: 'Création et développement d\'un réseau social de recettes'
+      }
     },
     clients: {
       title: 'Testimonials.',
