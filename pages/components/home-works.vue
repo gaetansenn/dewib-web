@@ -46,6 +46,16 @@ export default {
         title: 'home.works.contents.mypopotte',
         image: require('~/assets/images/works/mypopotte.png'),
         link: 'https://mypopotte.com'
+      },
+      {
+        title: 'home.works.contents.ratp',
+        image: require('~/assets/images/works/ratp.png'),
+        link: 'https://www.tootbus.com/'
+      },
+      {
+        title: 'home.works.contents.naos',
+        image: require('~/assets/images/works/naos.png'),
+        link: 'https://www.etatpur.com/'
       }]
     }
   }

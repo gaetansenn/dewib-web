@@ -50,7 +50,9 @@ export default {
         franprix: 'Site e-commerce franprix',
         pandacola: 'Marketplace pandacola',
         'xhr-cache': 'Project open source',
-        mypopotte: 'Création et développement d\'un réseau social de recettes'
+        mypopotte: 'Création et développement d\'un réseau social de recettes',
+        ratp: 'Développement d\'une plateforme de reservation de bus pour RATP',
+        naos: 'Développement d\'un site e-commerce pour le groupe NAOS'
       }
     },
     clients: {
